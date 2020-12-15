@@ -1,0 +1,368 @@
+footer {
+    width: 100%;
+    position: relative;
+}
+
+footer .footer-top {
+    height: 447px;
+    background-color: #fcfcfc;
+    position: relative;
+}
+
+footer .footer-top .footer-top-center {
+    position: absolute;
+    width: 960px;
+    height: 447px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+footer .footer-top .footer-top-center img {
+    margin: 30px 0 0 20px;
+    padding-bottom: 30px;
+}
+
+footer .footer-top .footer-top-center .footer-top-center-box {
+    margin-left: 12px;
+    width: 145px;
+    height: 146px;
+    border-right: 1px solid #999;
+    float: left;
+    padding: 0 1px 0 16px;
+}
+
+footer .footer-top .footer-top-center .footer-top-center-box :first-child {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+footer .footer-top .footer-top-center .footer-top-center-box .promise {
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+footer .footer-top .footer-top-center .footer-top-center-box .code {
+    margin-top: 0;
+    margin-bottom: -31px;
+}
+
+footer .footer-top .footer-top-center .footer-top-center-box .special-code {
+    margin-top: 0;
+}
+
+footer .footer-bottom {
+    height: 40px;
+}
+
+.special-code-box {
+    border-right: none !important;
+}
+
+.contact {
+    width: 960px;
+    height: 30px;
+    background-color: #d7237e;
+    margin-top: 170px;
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+
+.contact ul {
+    border: 1px solid transparent;
+    width: 790px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 4px;
+    bottom: 0;
+}
+
+.contact ul .report {
+    border-right: none;
+}
+
+.contact li {
+    text-align: center;
+    border-right: 1px solid white;
+    padding: 0 8px;
+    float: left;
+}
+
+.footer-footer {
+    width: 960px;
+    height: 76px;
+    margin: 14px 0;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.footer-bottom {
+    width: 960px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 482px;
+    bottom: 0;
+    text-align: center;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.triangle,
+.header-top-center-place .header-top-center-triangle,
+.sale-triangle {
+    width: 0;
+    height: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #999 transparent transparent transparent;
+}
+
+.purple,
+.header-top-center-place:hover .samefont-01,
+.header-top-center-login .login-font:hover {
+    color: #f10180;
+    cursor: pointer;
+}
+
+.header-top {
+    width: 100%;
+    height: 30px;
+    background-color: #F5F5F5;
+}
+
+.header-top-center {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header-top-center .header-top-center-login {
+    width: 772px;
+    height: 30px;
+    float: right;
+    font-size: 12px;
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+.header-top-center .header-top-center-login .login-font {
+    float: left;
+    width: 11.1%;
+    text-align: center;
+}
+
+.header-top-center-place {
+    float: left;
+    width: 80px;
+    height: 30px;
+    position: relative;
+}
+
+.header-top-center-place .samefont-01 {
+    font-size: 12px;
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+.header-top-center-place .header-top-center-triangle {
+    float: right;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+}
+
+.header-top-center-place:hover {
+    cursor: pointer;
+}
+
+.header-top-center-place:hover .header-top-center-triangle {
+    border-color: #f10180 transparent transparent transparent;
+}
+
+.header-top-center-login {
+    position: relative;
+}
+
+.header-top-center-login img {
+    margin-bottom: 8px;
+}
+
+.header-top-center-login .login-font:hover .sale-triangle {
+    border-color: #f10180 transparent transparent transparent;
+}
+
+.sale-triangle {
+    top: 14px;
+    position: absolute;
+}
+
+.header-search {
+    height: 100px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header-search .header-search-left {
+    width: 464px;
+    float: left;
+}
+
+.header-search .header-search-left .logo {
+    position: absolute;
+    float: left;
+}
+
+.header-search .header-search-left .logo-right {
+    height: 100px;
+    width: 304px;
+    margin-left: 160px;
+}
+
+.header-search .header-search-right {
+    position: relative;
+    width: 572px;
+    height: 100%;
+    float: right;
+}
+
+.header-search .header-search-right .search-search {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 388px;
+    height: 60px;
+    float: left;
+}
+
+.header-search .header-search-right .search-search .under-searchbox {
+    color: #999;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.header-search .header-search-right .search-search .under-searchbox li {
+    float: left;
+    padding: 0 4px 0 4px;
+}
+
+.header-search .header-search-right .search-search .under-searchbox .year {
+    padding-left: 0;
+}
+
+.header-search .header-search-right #searchbox {
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 324px;
+    height: 28px;
+    padding: 2px 12px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.header-search .header-search-right .searchboxline {
+    border: 2px solid #fa2a83;
+    width: 387px;
+    height: 32px;
+    z-index: 2;
+}
+
+.header-search .header-search-right .searchlogo {
+    width: 56px;
+    height: 100%;
+    background-color: #fa2a83;
+    float: right;
+}
+
+.header-search .header-search-right .searchlogo .searchlogo-help {
+    cursor: pointer;
+    background-image: url(//shop.vipstatic.com/img/common/header/sprites-hash-06206acd.png?78d4dd66);
+    background-position: -281px -101px;
+    width: 25px;
+    height: 28px;
+    margin-left: 15px;
+}
+
+.search-bag {
+    cursor: pointer;
+    width: 96px;
+    height: 34px;
+    background-color: #f6f7f9;
+    border: 1px solid #ccc;
+    float: right;
+    margin-right: 18px;
+    margin-top: 18px;
+}
+
+.search-bag p {
+    font-size: 14px;
+    float: left;
+    line-height: 34px;
+    margin-left: 10px;
+}
+
+.search-bag span {
+    width: 26px;
+    height: 16px;
+    border-radius: 17px;
+    text-align: center;
+    line-height: 16px;
+    background-color: #f00581;
+    color: white;
+    margin-right: 6px;
+    margin-top: 8px;
+    float: right;
+}
+
+.header-nav {
+    width: 1170px;
+    height: 43px;
+    margin: 0 auto;
+}
+
+.header-nav .specilal {
+    color: #f10180;
+    font-weight: bolder;
+}
+
+.header-nav img {
+    margin-bottom: 3px;
+}
+
+.header-nav li {
+    float: left;
+    line-height: 40px;
+    width: 7.1%;
+    text-align: center;
+    height: 100%;
+}
+
+.header-nav li:hover {
+    color: #f10180;
+    cursor: pointer;
+}
+
+.header-nav .goods-categories {
+    color: white;
+    width: 126px;
+    height: 43px;
+    background-color: #F10180;
+}
+
+.header-nav .goods-categories:hover {
+    color: white;
+}

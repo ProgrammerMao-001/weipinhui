@@ -1,0 +1,586 @@
+@import"top";
+@import"banner";
+// 公共样式
+img {
+    vertical-align: bottom;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #999 transparent transparent transparent;
+}
+
+// 这是公共的鼠标移入文字变成紫色的样式
+.purple {
+    color: #f10180;
+    cursor: pointer;
+}
+
+// 头部
+// header {
+//     height: 173px;
+//     border: 1px solid red;
+// }
+// 这是头部的最顶部  30
+.header-top {
+    width: 100%;
+    height: 30px;
+    background-color: #F5F5F5;
+}
+
+// 这个是头部的最顶部的版心
+.header-top-center {
+    width: 1170px;
+    margin: 0 auto;
+    // border: 1px solid red;
+    & .header-top-center-login {
+        width: 772px;
+        height: 30px;
+        // border: 1px solid green;
+        float: right;
+        font-size: 12px;
+        line-height: 30px;
+        margin-left: 15px;
+        & .login-font {
+            float: left;
+            width: 11.1%;
+            text-align: center;
+            // border: 1px solid orange;
+            // margin-right: 15px;
+        }
+    }
+}
+
+//版心里面的内容
+.header-top-center-place {
+    float: left;
+    width: 80px;
+    height: 30px;
+    // border: 1px solid green;
+    position: relative;
+    & .samefont-01 {
+        font-size: 12px;
+        line-height: 30px;
+        margin-left: 15px;
+    }
+    & .header-top-center-triangle {
+        float: right;
+        position: absolute;
+        top: 12px;
+        right: 6px;
+        @extend .triangle;
+    }
+}
+
+.header-top-center-place:hover {
+    cursor: pointer;
+    & .samefont-01 {
+        @extend .purple;
+    }
+    & .header-top-center-triangle {
+        border-color: #f10180 transparent transparent transparent;
+    }
+}
+
+.header-top-center-login {
+    position: relative;
+    & img {
+        margin-bottom: 8px;
+    }
+    & .login-font:hover {
+        @extend .purple;
+        & .sale-triangle {
+            border-color: #f10180 transparent transparent transparent;
+        }
+    }
+}
+
+.sale-triangle {
+    top: 14px;
+    position: absolute;
+    @extend .triangle;
+}
+
+//搜索栏  100
+.header-search {
+    height: 100px;
+    width: 1170px;
+    margin: 0 auto;
+    // border: 2px solid orange;
+    & .header-search-left {
+        // border: 2px solid blue;
+        width: 464px;
+        float: left;
+        & .logo {
+            // height: 100%;
+            position: absolute;
+            float: left;
+        }
+        & .logo-right {
+            height: 100px;
+            width: 304px;
+            margin-left: 160px;
+        }
+    }
+    & .header-search-right {
+        position: relative;
+        width: 572px;
+        height: 100%;
+        // border: 2px solid blue;
+        float: right;
+        & .search-search {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            width: 388px;
+            height: 60px;
+            float: left;
+            // border: 1px solid red;
+            & .under-searchbox {
+                color: #999;
+                cursor: pointer;
+                font-size: 12px;
+                & li {
+                    float: left;
+                    padding: 0 4px 0 4px;
+                }
+                & .year {
+                    padding-left: 0;
+                }
+            }
+        }
+        & #searchbox {
+            border: none;
+            outline: none;
+            background-color: white;
+            width: 324px;
+            height: 28px;
+            padding: 2px 12px;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        & .searchboxline {
+            border: 2px solid #fa2a83;
+            width: 387px;
+            height: 32px;
+            z-index: 2;
+        }
+        & .searchlogo {
+            width: 56px;
+            height: 100%;
+            background-color: #fa2a83;
+            float: right;
+            & .searchlogo-help {
+                cursor: pointer;
+                background-image: url(//shop.vipstatic.com/img/common/header/sprites-hash-06206acd.png?78d4dd66);
+                background-position: -281px -101px;
+                width: 25px;
+                height: 28px;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.search-bag {
+    cursor: pointer;
+    width: 96px;
+    height: 34px;
+    background-color: #f6f7f9;
+    border: 1px solid #ccc;
+    float: right;
+    margin-right: 18px;
+    margin-top: 18px;
+    & p {
+        font-size: 14px;
+        float: left;
+        line-height: 34px;
+        margin-left: 10px;
+    }
+    & span {
+        width: 26px;
+        height: 16px;
+        border-radius: 17px;
+        text-align: center;
+        line-height: 16px;
+        background-color: #f00581;
+        color: white;
+        margin-right: 6px;
+        margin-top: 8px;
+        float: right;
+    }
+}
+
+// 这是导航栏   43
+.help-nav {
+    z-index: 100;
+    // position: fixed;
+    top: 130px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 #a7a7a7;
+}
+
+.header-nav {
+    width: 1170px;
+    height: 43px;
+    margin: 0 auto;
+    top: 0;
+    // border: 2px solid blue;
+    & .specilal {
+        color: #f10180;
+        font-weight: bolder;
+    }
+    & img {
+        margin-bottom: 3px;
+    }
+    & li {
+        float: left;
+        line-height: 40px;
+        width: 7.1%;
+        text-align: center;
+        height: 100%;
+        // border: 2px solid green;
+    }
+    & li:hover {
+        color: #f10180;
+        cursor: pointer;
+    }
+    & .goods-categories {
+        color: white;
+        width: 126px;
+        height: 43px;
+        background-color: #F10180;
+    }
+    & .goods-categories:hover {
+        color: white;
+    }
+}
+
+// 侧边栏
+// 底部
+footer {
+    width: 100%;
+    position: relative;
+    & .footer-top {
+        height: 447px;
+        background-color: #fcfcfc;
+        position: relative;
+        & .footer-top-center {
+            position: absolute;
+            width: 960px;
+            height: 447px;
+            // border: 1px solid red;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            & img {
+                margin: 30px 0 0 20px;
+                padding-bottom: 30px;
+            }
+            & .footer-top-center-box {
+                margin-left: 12px;
+                width: 145px;
+                height: 146px;
+                border-right: 1px solid #999;
+                float: left;
+                padding: 0 1px 0 16px;
+                & :first-child {
+                    margin-top: 10px;
+                    font-size: 14px;
+                    font-weight: bolder;
+                }
+                & .promise {
+                    font-weight: normal;
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+                .code {
+                    margin-top: 0;
+                    margin-bottom: -31px;
+                }
+                & .special-code {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    & .footer-bottom {
+        height: 40px;
+    }
+}
+
+.special-code-box {
+    border-right: none !important;
+}
+
+.contact {
+    width: 960px;
+    height: 30px;
+    background-color: #d7237e;
+    margin-top: 170px;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    ul {
+        border: 1px solid transparent;
+        width: 790px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 4px;
+        bottom: 0;
+        .report {
+            border-right: none;
+        }
+    }
+    li {
+        text-align: center;
+        border-right: 1px solid white;
+        padding: 0 8px;
+        float: left;
+    }
+}
+
+.footer-footer {
+    width: 960px;
+    height: 76px;
+    // border: 1px solid blue;
+    margin: 14px 0;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.footer-bottom {
+    width: 960px;
+    height: 40px;
+    // border: 1px solid red;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 482px;
+    bottom: 0;
+    text-align: center;
+}
+
+//这是主体部分的开始
+// 轮播图
+.banner-sport {
+    margin-top: 43px;
+    width: 100%;
+    height: 452px;
+    background: url(http://b.appsimg.com/upload/momin/2020/12/01/182/1606809162008.jpg) center no-repeat;
+    .banner-sport-img {
+        width: 1146px;
+        height: 400px;
+        // border: 1px solid blue;
+        margin: 0px 0 0 379px;
+        position: relative;
+    }
+    .banner-help {
+        padding-left: 300px;
+    }
+    .banner-left,
+    .banner-right {
+        width: 230px;
+        height: 40px;
+        float: left;
+        line-height: 40px;
+        text-align: center;
+    }
+    .banner-left {
+        border-bottom: 2px solid #e6057d;
+    }
+}
+
+.span-left,
+.span-right {
+    background: rgba(0, 0, 0, .5);
+    width: 33px;
+    height: 66px;
+    color: white;
+    font-size: 22px;
+    line-height: 66px;
+    text-align: center;
+}
+
+.span-left {
+    position: absolute;
+    left: 1113px;
+    top: 144px;
+}
+
+.span-right {
+    position: absolute;
+    right: 1113px;
+    top: 144px;
+    z-index: 11111;
+}
+
+// 渲染的部分
+.render {
+    width: 1170px;
+    margin-left: 366px;
+    // border: 1px solid red;
+    // 这是女装的
+    ul li {
+        width: 570px;
+        height: 320px;
+        float: left;
+        border: 1px solid red;
+        margin: 15px 0px;
+        span {
+            font-weight: bolder;
+            font-size: 18px;
+        }
+    }
+    .start-woman {
+        // border: 1px solid blue;
+        width: 570px;
+        float: left;
+        margin: 0 7px 0 7px;
+        span {
+            color: #999;
+            font-size: 14px;
+        }
+        .woman-intro {
+            font-size: 18px;
+            font-weight: bolder;
+            line-height: 34px;
+            margin-left: 8px;
+        }
+        .woman-num {
+            margin-left: 8px;
+            color: red;
+            font-size: 18px;
+        }
+    }
+    .nvzhuang {
+        padding: 10px 0;
+    }
+}
+
+// nazhuang
+// 鞋包的
+.start-shoes {
+    // border: 1px solid blue;
+    width: 570px;
+    float: left;
+    margin: 0 7px 0 7px;
+    span {
+        color: #999;
+        font-size: 14px;
+    }
+    .shoes-intro {
+        font-size: 18px;
+        font-weight: bolder;
+        line-height: 34px;
+        margin-left: 8px;
+    }
+    .shoes-num {
+        margin-left: 8px;
+        color: red;
+        font-size: 18px;
+    }
+}
+
+.xiebao {
+    padding: 10px 0;
+}
+
+// 男装的
+.start-clothes {
+    // border: 1px solid blue;
+    width: 570px;
+    float: left;
+    margin: 0 7px 0 7px;
+    span {
+        color: #999;
+        font-size: 14px;
+    }
+    .clothes-intro {
+        font-size: 18px;
+        font-weight: bolder;
+        line-height: 34px;
+        margin-left: 8px;
+    }
+    .clothes-num {
+        margin-left: 8px;
+        color: red;
+        font-size: 18px;
+    }
+}
+
+.nanzhuang {
+    padding: 10px 0;
+}
+
+// 运动的开始
+.yundong {
+    padding: 10px 0;
+}
+
+.sport {
+    height: 800px;
+    background-color: lightgreen;
+}
+
+// 饰品的开始
+.shipin {
+    padding: 10px 0;
+}
+
+.watches {
+    height: 800px;
+    background-color: rgb(91, 93, 94);
+}
+
+// 美妆的开始
+.meizhuang {
+    padding: 10px 0;
+}
+
+.beauty {
+    height: 800px;
+    background-color: rgb(70, 163, 224);
+}
+
+// 母婴的开始
+.muying {
+    padding: 10px 0;
+}
+
+.baby {
+    height: 800px;
+    background-color: rgb(49, 68, 155);
+}
+
+// 居家的开始
+.jujia {
+    padding: 10px 0;
+}
+
+.home {
+    height: 800px;
+    background-color: rgb(134, 49, 155);
+}
+
+// 生活的开始
+.shenghuo {
+    padding: 10px 0;
+}
+
+.life {
+    height: 800px;
+    background-color: rgba(49, 155, 137, 0.418);
+}

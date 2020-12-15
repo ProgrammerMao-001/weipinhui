@@ -7,8 +7,8 @@ header('Access-Control-Allow-Method:POST,GET'); //允许请求方式是get和pos
 header('content-type:text/html;charset=utf-8');
 define('HOST','localhost');//主机名
 define('USERNAME','root');//用户名
-define('PASSWORD','root');//密码
-define('DBNAME','taobao');//数据库名
+define('PASSWORD','');//密码
+define('DBNAME','weipinhui');//数据库名
 $conn = @new mysqli(HOST,USERNAME,PASSWORD,DBNAME);
 
 if($conn->connect_error){
@@ -17,7 +17,7 @@ if($conn->connect_error){
 
 
 //2.输出接口
-$result=$conn->query("select * from taobaogoods");
+$result=$conn->query("select * from woman");
 
 $arr = array();
 
