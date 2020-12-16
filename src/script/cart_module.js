@@ -22,11 +22,12 @@ define(['jcookie'], () => {
                     $.each(data, function(index, value) {
                         if (sid === value.sid) { //通过sid的对比找到对应的数据。
                             let $clonebox = $('.goods-item:hidden').clone(true, true); //克隆
-                            $clonebox.find('.goods-pic img').attr('src', value.url);
+                            $clonebox.find('.goods-pic img').attr('src', value.src);
                             $clonebox.find('.goods-d-info a').html(value.title);
-                            $clonebox.find('.b-price strong').html(value.price);
+                            $clonebox.find('.b-price strong').html(value.newprice);
                             $clonebox.find('.quantity-form input').val(num);
-                            $clonebox.find('.b-sum strong').html((value.price * num).toFixed(2));
+                            // $clonebox.find(".price-sum totalprice").html(value.sid) // 123
+                            $clonebox.find('.b-sum strong').html((value.newprice * num).toFixed(2));
                             $clonebox.css('display', 'block'); //显示
                             $('.item-list').append($clonebox); //追加
                         }
