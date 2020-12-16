@@ -1,6 +1,6 @@
 <?php
 include "conn.php";//引入数据库连接代码。
-$result = $conn->query("select * from weipinhui"); //获取数据的结果集(记录集)
+$result = $conn->query("select * from womanlist"); //获取数据的结果集(记录集)
 $num = $result->num_rows; //记录集的总条数
 
 
@@ -19,7 +19,7 @@ if (isset($_GET['page'])) {//判断前端传入的页面是否存在，
 
 //根据传入的页码，计算起始的偏移值。
 $page = ($pagevalue - 1) * $pagesize;
-$sql1 = "select * from woman limit $page,$pagesize";
+$sql1 = "select * from womanlist limit $page,$pagesize";
 $res = $conn->query($sql1);
 //通过二维数组输出
 // $result->num_rows; //记录集的条数

@@ -8,34 +8,117 @@ define(['jcookie'], () => {
             }
             //2.将sid传给后端，后端根据对应的sid返回不同的数据。
             $.ajax({
-                url: 'http://localhost/JS2010/week06/Day%2029-Day%2031_jquery/projectname/php/detail.php',
+                url: 'http://10.31.161.123/dashboard/weipinhui/php/detail.php',
                 data: {
                     sid: $sid
                 },
                 dataType: 'json'
             }).done(function(data) {
-                console.log(data);
-                console.log(data.urls);
                 //获取数据，将数据放入对应的结构中。
                 $('#smallpic').attr('src', data.url);
                 $('.loadtitle').html(data.title);
                 $('.loadpcp').html(data.price);
+                $('#bpic').attr('src', data.url);
 
                 //渲染放大镜下面的小图
                 let $picurl = data.urls.split(','); //将数据转换成数组。
-                let $strhtml = '';
+                let $strhtml = '<ul>';
                 const $list = $('#list');
-                console.log($picurl);
                 $.each($picurl, function(index, value) {
-                    $strhtml += `
-                <li>
-                    <img src="${value}"/>
-                </li>
-            `;
+                    $strhtml += `<li><img src="${value}"/></li>`;
                 });
+                $strhtml += '<ul>';
                 $list.html($strhtml);
             });
 
+            //3.放大镜效果
+            const $spic = $('#spic');
+            const $bpic = $('#bpic');
+            const $sf = $('#sf'); //小放
+            const $bf = $('#bf'); //大放
+            const $left = $('#left'); //左箭头
+            const $right = $('#right'); //右箭头
+            const $list = $('#list'); //小图列表
+            //$spic 小图   $bpic 大图  
+
+            //小放/大放=小图/大图
+            $sf.width($spic.width() * $bf.width() / $bpic.width());
+            $sf.height($spic.height() * $bf.height() / $bpic.height());
+            let $bili = $bpic.width() / $spic.width(); //比例大于1 放大效果
+
+
+            $spic.hover(function() {
+                $sf.css('visibility', 'visible');
+                $bf.css('visibility', 'visible');
+                $(this).on('mousemove', function(ev) {
+                    let $leftvalue = ev.pageX - $('.goodsinfo').offset().left - $sf.width() / 2;
+                    let $topvalue = ev.pageY - $('.goodsinfo').offset().top - $sf.height() / 2;
+                    if ($leftvalue < 0) {
+                        $leftvalue = 0;
+                    } else if ($leftvalue >= $spic.width() - $sf.width()) {
+                        $leftvalue = $spic.width() - $sf.width()
+                    }
+
+                    if ($topvalue < 0) {
+                        $topvalue = 0;
+                    } else if ($topvalue >= $spic.height() - $sf.height()) {
+                        $topvalue = $spic.height() - $sf.height()
+                    }
+
+                    $sf.css({
+                        left: $leftvalue,
+                        top: $topvalue
+                    });
+
+                    $bpic.css({
+                        left: -$leftvalue * $bili,
+                        top: -$topvalue * $bili
+                    });
+
+                });
+            }, function() {
+                $sf.css('visibility', 'hidden');
+                $bf.css('visibility', 'hidden');
+            });
+
+            //小图切换
+            $('#list ul').on('click', 'li', function() {
+                //$(this):当前操作的li
+                let $imgurl = $(this).find('img').attr('src');
+                $smallpic.attr('src', $imgurl);
+                $bpic.attr('src', $imgurl);
+            });
+
+            //左右箭头事件
+            let $num = 6; //列表显示的图片个数
+            $right.on('click', function() {
+                let $lists = $('#list ul li');
+                if ($lists.size() > $num) { //限制点击的条件
+                    $num++;
+                    $left.css('color', '#333');
+                    if ($lists.size() == $num) {
+                        $right.css('color', '#fff');
+                    }
+                    $('#list ul').animate({
+                        left: -($num - 6) * $lists.eq(0).outerWidth(true)
+                    });
+                }
+            });
+
+
+            $left.on('click', function() {
+                let $lists = $('#list ul li');
+                if ($num > 6) { //限制点击的条件
+                    $num--;
+                    $right.css('color', '#333');
+                    if ($num <= 6) {
+                        $left.css('color', '#fff');
+                    }
+                    $('#list ul').animate({
+                        left: -($num - 6) * $lists.eq(0).outerWidth(true)
+                    });
+                }
+            });
 
 
             //五.购物车：(商品sid、商品数量)

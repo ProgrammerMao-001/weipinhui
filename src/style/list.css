@@ -1,0 +1,112 @@
+.sortbox {
+    height: 46px;
+    position: relative;
+    background-color: #f5f5f5;
+    /* border: 1px solid red; */
+}
+
+.sort {
+    position: absolute;
+    height: 46px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1168px;
+    height: 46px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+}
+
+.sortul {
+    width: 260px;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.sortul li {
+    text-align: center;
+    line-height: 46px;
+    width: 33%;
+    float: left;
+    font-weight: bolder;
+}
+
+.sortul li button {
+    width: 80%;
+}
+
+
+/* 
+.sortul li:hover {
+    cursor: pointer;
+    border: 1px solid #f10180;
+    color: #f10180;
+} */
+
+
+/* 渲染的部分 */
+
+.listbox {
+    height: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.list {
+    position: absolute;
+    width: 1168px;
+    /* border: 1px solid green; */
+    margin-left: 366px;
+}
+
+.listul {
+    /* width: 20%; */
+    height: 338px;
+    /* border: 2px solid blue; */
+    float: left;
+    padding-left: 6px;
+}
+
+.listimg {
+    width: 216px;
+    height: 218px;
+    margin-left: 8px;
+}
+
+.saler {
+    width: 44px;
+    height: 18px;
+    background-image: linear-gradient(270deg, #e456ff 0, #ff31a3 100%);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+    display: inline-block;
+    float: left;
+    margin: 10px 5px 0px 5px;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.intro {
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    line-height: 20px;
+    margin-left: 8px;
+    width: 216px;
+}
+
+.newprice {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.oldprice {
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #333;
+}

@@ -16,13 +16,11 @@ define(['jcookie'], () => {
             function rendergoods(sid, num) { //sid:商品的编号    num:商品的数量
                 //获取所有的接口数据
                 $.ajax({
-                    url: 'http://localhost/JS2010/week06/Day%2029-Day%2031_jquery/projectname/php/listdata.php',
+                    url: 'http://10.31.161.123/dashboard/weipinhui/php/alldata.php',
                     dataType: 'json'
                 }).done(function(data) {
                     $.each(data, function(index, value) {
                         if (sid === value.sid) { //通过sid的对比找到对应的数据。
-                            //:hidden:匹配所有不可见元素，或者type为hidden的元素
-                            //clone([Even[,deepEven]]) 克隆匹配的DOM元素并且选中这些克隆的副本。
                             let $clonebox = $('.goods-item:hidden').clone(true, true); //克隆
                             $clonebox.find('.goods-pic img').attr('src', value.url);
                             $clonebox.find('.goods-d-info a').html(value.title);

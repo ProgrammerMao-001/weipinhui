@@ -2,21 +2,34 @@ define(['jlazyload'], () => {
     return {
         init: function() {
             //渲染+懒加载
-            const $list = $('.list123');
+            const $list = $('.list');
             $.ajax({
-                url: 'http://localhost/dashboard/weipinhui/php/listdata.php',
+                url: 'http://10.31.161.123/dashboard/weipinhui/php/listdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
                 $.each(data, function(index, value) {
+                    // $strhtml += `
+                    //     <li>
+
+                    //             <img class="lazy" data-original="${value.src}" width="200" height="200"/>
+                    //             <span>${value.title}</span>
+                    //             <p>￥${value.discount}</p>
+                    //     </li>
+                    // `;
+
+
                     $strhtml += `
-                        <li>
- 
-                                <img class="lazy" data-original="${value.src}" width="200" height="200"/>
-                                <span>${value.title}</span>
-                                <p>￥${value.num}</p>
-                        </li>
+                    <li>
+                    <a href="detail.html?sid=${value.sid}">
+                        <img class="lazy" data-original="${value.src}"/>
+                        <p>${value.title}</p>
+                        <span>￥${value.newprice}</span>
+                    </a>
+                    </li>
                     `;
+
+
                 });
                 $list.html($strhtml);
                 //渲染的下面进行懒加载操作
