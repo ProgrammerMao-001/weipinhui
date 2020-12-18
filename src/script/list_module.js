@@ -23,16 +23,25 @@ define(['pagination', 'jlazyload'], function() {
                 data = datalist.pagedata; //获取接口里面数据
                 let $strhtml = '';
                 $.each(data, function(index, value) {
+                    // $strhtml += `
+                    //     <li>
+                    //         <a href="detail.html?sid=${value.sid}">
+                    //             <img class="lazy listimg" data-original="${value.src}"/>
+                    //             <p>${value.title}</p>
+                    //             <span>￥${value.newprice}</span>
+                    //         </a>
+                    //     </li>
+                    // `;
+
                     $strhtml += `
                         <li>
                             <a href="detail.html?sid=${value.sid}">
                                 <img class="lazy listimg" data-original="${value.src}"/>
                                 <p>${value.title}</p>
-                                <span>￥${value.newprice}</span>
+                                <span class="newpricer">￥${value.newprice}</span>
                             </a>
                         </li>
                     `;
-
 
                     // $strhtml += `
                     //     <ul class="listul">

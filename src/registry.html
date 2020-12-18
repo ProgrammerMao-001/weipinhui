@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>注册页面</title>
+    <title>唯品会网站注册</title>
+    <link rel="stylesheet" href="./style/loginregistry.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 
 <body>
-    <fieldset style="width:500px;margin:0 auto;">
+    <!-- <fieldset style="width:500px;margin:0 auto;">
         <legend>用户注册</legend>
         <form action="http://localhost/JS2010/week06/Day%2029-Day%2031_jquery/loginregistry/php/reg.php" method="post">
             <p><label for="">用户名：</label><input type="text" name="username" id="username"><span></span></p>
@@ -17,7 +19,93 @@
             <p><label for="">邮　箱：</label><input type="text" name="email"></p>
             <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
         </form>
-    </fieldset>
+    </fieldset> -->
+    <div class="top">
+        <div class="top-center">
+            <div class="top-centerleft"></div>
+            <div class="top-centerright"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-center">
+            <div class="zhuce">
+                <div class="zhuce-top">
+                    <span class="vip">会员注册</span>
+                    <p class="have">已注册<span>可直接登录</span></p>
+                </div>
+
+                <div class="zhuce-bottom">
+                    <form action="" ,method="post" ,id="form">
+
+
+                        <!-- 手机号 -->
+                        <div class="sjnun">
+                            <div class="sjpic"></div>
+
+                            <input type="text" name="tel" placeholder="请输入手机号码" id="phone">
+                        </div>
+                        <div class="sjnumdd">
+                            <!-- <span>手机号不能为空</span> -->
+                        </div>
+
+
+
+                        <!-- 邮箱 -->
+                        <div class="yx">
+                            <div class="yxpic"></div>
+                            <input type="text" name="email" placeholder="请输入邮箱" id="email">
+
+                        </div>
+                        <div class="yxdd">
+                            <!-- <span>请输入6位数字手机验证码</span> -->
+                        </div>
+
+
+                        <!-- 密码 -->
+                        <div class="mima">
+                            <div class="mimapic"></div>
+
+                            <input type="text" name="password" placeholder="密码由8-20位字母，字母和符号组合" id="passwd">
+
+                        </div>
+                        <div class="mimadd">
+                            <!-- <span>密码不能为空</span> -->
+                        </div>
+
+
+                        <!-- 确认密码 -->
+                        <div class="qrmima">
+                            <div class="qrmimapic"></div>
+                            <input type="text" name="surepassword" placeholder="请再次输入上面的密码" id="surepasswd">
+
+                        </div>
+                        <div class="qrmimadd">
+                            <!-- <span>两次输入的密码不一致，请重试</span> -->
+                        </div>
+
+
+                        <!-- 确认协议 -->
+                        <div class="read">
+                            <input type="checkbox" id="check">
+                            <div class="readtext">
+                                <p>我已阅读并接受以下条款：《唯品会服务条款》《隐私条款》《唯品支付用户服务协议》</p>
+                            </div>
+                        </div>
+
+                        <!-- 确认按钮 -->
+                        <div class="makesure">
+                            <button id="sure">立即注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-center">
+            <p>Copyright 2008-2020 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+* {
+  list-style: none;
+}
+
 img {
   vertical-align: bottom;
 }
@@ -386,7 +390,6 @@ footer .footer-bottom {
 
 .render {
   width: 1170px;
-  margin-left: 366px;
 }
 .render ul li {
   width: 570px;
@@ -420,7 +423,7 @@ footer .footer-bottom {
   font-size: 18px;
 }
 .render .nvzhuang {
-  padding: 10px 0;
+  padding: 22px 0;
 }
 
 .start-shoes {
@@ -445,7 +448,10 @@ footer .footer-bottom {
 }
 
 .xiebao {
-  padding: 10px 0;
+  padding: 22px 0;
+}
+.xiebao img {
+  margin-top: 100px;
 }
 
 .start-clothes {
@@ -470,11 +476,11 @@ footer .footer-bottom {
 }
 
 .nanzhuang {
-  padding: 10px 0;
+  padding: 22px 0;
 }
 
 .yundong {
-  padding: 10px 0;
+  padding: 22px 0;
 }
 
 .sport {
@@ -492,7 +498,7 @@ footer .footer-bottom {
 }
 
 .meizhuang {
-  padding: 10px 0;
+  padding: 22px 0;
 }
 
 .beauty {
@@ -501,7 +507,7 @@ footer .footer-bottom {
 }
 
 .muying {
-  padding: 10px 0;
+  padding: 22px 0;
 }
 
 .baby {
@@ -510,7 +516,7 @@ footer .footer-bottom {
 }
 
 .jujia {
-  padding: 10px 0;
+  padding: 22px 0;
 }
 
 .home {
@@ -519,12 +525,505 @@ footer .footer-bottom {
 }
 
 .shenghuo {
-  padding: 10px 0;
+  padding: 22px 0;
 }
 
 .life {
   height: 800px;
   background-color: rgba(49, 155, 137, 0.418);
+}
+
+.bigsale {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.bigsale-box {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  position: relative;
+}
+.bigsale-box .bigsale-boxhelp {
+  width: 1196px;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.bigsale-box img {
+  margin-right: 20px;
+  float: left;
+}
+
+.mustsee-box {
+  width: 100%;
+  position: relative;
+  height: 342px;
+}
+.mustsee-box .mustsee {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1170px;
+  height: 342px;
+}
+.mustsee-box .mustsee .mustsee-left,
+.mustsee-box .mustsee .mustsee-right {
+  float: right;
+  position: relative;
+  float: right;
+  width: 570px;
+  height: 342px;
+}
+.mustsee-box .mustsee .mustsee-left li img,
+.mustsee-box .mustsee .mustsee-right li img {
+  width: 172px;
+  height: 217px;
+  padding-bottom: 4px;
+}
+.mustsee-box .mustsee .mustsee-left {
+  float: left;
+  width: 600px;
+  height: 342px;
+  position: relative;
+}
+.mustsee-box .mustsee .mustsee-left .mustsee-leftpic {
+  position: relative;
+  width: 700px;
+  height: 340px;
+}
+.mustsee-box .mustsee .mustsee-left ul {
+  position: absolute;
+  padding-left: 30px;
+  left: 0;
+  right: 0;
+  top: 72px;
+  width: 100%;
+  height: 290px;
+}
+.mustsee-box .mustsee .mustsee-left ul li {
+  float: left;
+  margin-right: 8px;
+}
+.mustsee-box .mustsee .mustsee-left ul li .temaiprice {
+  width: 70px;
+  color: white;
+  font-size: 12px;
+  border-radius: 10px;
+  height: 22px;
+  padding: 3px 10px;
+  background: #F03867;
+  margin-left: 40px;
+}
+.mustsee-box .mustsee .mustsee-left ul li .thisisprice {
+  font-size: 14px;
+  margin: 3px 0 0 10px;
+}
+
+.mustersee-rightpic img {
+  width: 600px;
+  height: 339px;
+}
+
+.helpul {
+  position: absolute;
+  left: 35px;
+  top: 70px;
+  width: 580px;
+}
+.helpul li {
+  width: 172px;
+  height: 217px;
+  background-color: #F2F2F2;
+  float: left;
+  margin-right: 8px;
+  position: relative;
+}
+.helpul .topfirst img {
+  width: 120px;
+  height: 22px;
+  position: absolute;
+  left: 26px;
+  bottom: 17px;
+  z-index: 100;
+}
+.helpul .manclothes {
+  position: absolute;
+  left: 30px;
+  bottom: -30px;
+  z-index: 101;
+}
+.helpul .bangbang {
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  z-index: 102;
+  font-size: 14px;
+  background-color: #f00581;
+  color: white;
+  position: absolute;
+  left: 126px;
+  bottom: -30px;
+}
+
+.nvxue img {
+  width: 120px;
+  height: 22px;
+  position: absolute;
+  left: 208px;
+  bottom: 17px;
+  z-index: 100;
+}
+
+.womanshoes {
+  position: absolute;
+  left: 232px;
+  bottom: -30px;
+}
+
+.bang {
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  z-index: 102;
+  font-size: 14px;
+  background-color: #f00581;
+  color: white;
+  position: absolute;
+  left: 277px;
+  bottom: -30px;
+}
+
+.ertong img {
+  width: 120px;
+  height: 22px;
+  position: absolute;
+  left: 382px;
+  bottom: 17px;
+  z-index: 100;
+}
+
+.children {
+  position: absolute;
+  left: 388px;
+  bottom: -30px;
+}
+
+.bangbangbang {
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  z-index: 102;
+  font-size: 14px;
+  background-color: #f00581;
+  color: white;
+  position: absolute;
+  left: 485px;
+  bottom: -30px;
+}
+
+.secondmust {
+  width: 100%;
+  height: 357px;
+  margin-top: 30px;
+  position: relative;
+}
+.secondmust .secondmust-pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1165px;
+  height: 395px;
+}
+.secondmust .secondmust-center {
+  width: 1170px;
+  height: 357px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.secondmust .secondmust-center ul {
+  width: 1130px;
+  height: 70%;
+  position: absolute;
+  left: 20px;
+  top: 72px;
+}
+.secondmust .secondmust-center ul li {
+  width: 174px;
+  height: 100%;
+  float: left;
+  margin-right: 16px;
+  position: relative;
+}
+.secondmust .secondmust-center ul .specialli {
+  margin-right: 0;
+}
+
+.caihongfather {
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  z-index: 106;
+  text-align: center;
+  position: absolute;
+  left: 30px;
+  box-shadow: 0 1px 1px 0 #a7a7a7;
+  top: 140px;
+}
+.caihongfather .caihong {
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
+}
+
+.temaijia {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.temaijia .temaibox {
+  line-height: 30px;
+  background-color: #F03867;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+.temaijia .saledeprice {
+  margin-left: 10px;
+}
+
+.xiebag {
+  width: 1170px;
+  height: 2200px;
+}
+.xiebag .shoesbagsons {
+  margin: 7px 7px;
+  float: left;
+  width: 570px;
+  height: 350px;
+}
+.xiebag .shoesbagsons .xie-intro {
+  font-weight: 800;
+  font-size: 20px;
+  color: #333;
+  line-height: 40px;
+  margin-left: 10px;
+}
+.xiebag .shoesbagsons .zhekou-xie {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #f10582;
+  font-family: Arial;
+  font-weight: bolder;
+}
+.xiebag .shoesbagsons .zhekoutop {
+  margin-left: 4px;
+}
+
+.more {
+  width: 100%;
+  height: 44px;
+  position: relative;
+}
+.more .more-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 324px;
+  height: 44px;
+  background-color: #f10180;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 44px;
+}
+
+.more-center:hover {
+  cursor: pointer;
+  background-color: #F43499;
+}
+
+.listboxer {
+  margin-top: 10px;
+  padding: 0 0 20px 0;
+}
+.listboxer .newprice,
+.listboxer .oldprice,
+.listboxer .discount,
+.listboxer .zhe {
+  display: contents;
+}
+
+.ppp {
+  width: 100px;
+  height: 20px;
+  display: initial;
+  margin-left: 60px;
+}
+
+.temaijiaa {
+  float: left;
+  margin: 5px 0 0 5px;
+  position: absolute;
+  color: white !important;
+  border-radius: 18px;
+  padding: 2px 10px;
+  font-size: 12px;
+  background-color: #ff38c0;
+  background-image: linear-gradient(270deg, #e456ff 0, #ff31a3 100%);
+}
+
+.list a {
+  text-decoration: none;
+  float: left;
+  margin-left: 10px;
+}
+.list img {
+  width: 218;
+  height: 218px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+.list .listtitle {
+  color: black;
+  text-decoration: none;
+  width: 210px;
+  text-indent: -4px;
+  line-height: 20px;
+  font-size: 12px;
+  margin: 10px 0 0 5px;
+}
+.list span {
+  color: #666;
+  text-decoration: none;
+  margin-left: -212px;
+  width: 50px;
+}
+
+.xuanrantitle {
+  position: relative;
+}
+
+.newprice {
+  font-size: 23px;
+  font-weight: bolder;
+  color: #333;
+}
+
+.oldprice {
+  color: #999 !important;
+  font-size: 14px;
+  text-decoration: line-through !important;
+}
+
+.discount,
+.zhe {
+  font-size: 14px;
+  color: #999999 !important;
+}
+
+.lunbopic-bigbox {
+  position: relative;
+  min-width: 1000px;
+}
+
+.lunbopic {
+  width: 100%;
+  height: 452px;
+  background: url("//b.appsimg.com/upload/momin/2020/12/01/182/1606809162008.jpg") -19px 0;
+}
+.lunbopic .lunbopic-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -44%);
+  width: 1166px;
+  height: 408px;
+}
+
+.lunbo {
+  height: 340px;
+  position: relative;
+}
+
+.lunbo ul li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+
+.lunbo ol {
+  visibility: hidden;
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+}
+
+.lunbo ol li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+  text-indent: -999em;
+  margin-right: 5px;
+}
+
+.lunbo ol li.active {
+  background: blue;
+}
+
+#left,
+#right {
+  position: absolute;
+  top: 70%;
+  margin-top: -60px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  text-decoration: none;
+  width: 33px;
+  height: 66px;
+  text-align: center;
+  line-height: 66px;
+  display: none;
+}
+
+#left {
+  left: 0px;
+}
+
+#right {
+  right: 20px;
+}
+
+.render {
+  position: relative;
+  width: 100%;
+  height: 22017px;
+}
+.render .render-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1180px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

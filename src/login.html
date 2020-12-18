@@ -4,20 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>唯品会网站登录</title>
+    <link rel="stylesheet" href="./style/login.css">
 </head>
 
 <body>
-    <fieldset style="width:500px;margin:0 auto;">
-        <legend>用户登录</legend>
-        <form action="" method="post">
-            <p><label for="">用户名：</label><input type="text" name="username" id="username"></p>
-            <p><label for="">密　码：</label><input type="password" name="password" id="password"></p>
-            <p><input type="button" value="登录" id="login"><a href="registry.html">立即注册</a></p>
-        </form>
-    </fieldset>
+
+    <div class="top">
+        <div class="top-center">
+            <div class="top-centerleft"></div>
+            <div class="top-centerright"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-center">
+            <div class="zhuce">
+                <div class="zhuce-top">
+                    <span class="vip">会员登录</span>
+                    <!-- <p class="have">已注册<span>可直接登录</span></p> -->
+                </div>
+
+                <div class="zhuce-bottom">
+                    <form action="" ,method="post" ,id="form">
+
+
+                        <!-- 手机号 -->
+                        <div class="sjnun">
+                            <div class="sjpic"></div>
+
+                            <input type="text" placeholder="手机号/用户名/邮箱" id="phone">
+                        </div>
+                        <div class="sjnumdd">
+                            <!-- <span>手机号不能为空</span> -->
+                        </div>
+
+
+
+                        <!-- 邮箱 -->
+                        <div class="yx">
+                            <div class="yxpic"></div>
+                            <input type="text" placeholder="密码" id="email">
+
+                        </div>
+                        <div class="yxdd">
+                            <!-- <span>请输入6位数字手机验证码</span> -->
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <!-- 确认按钮 -->
+                        <div class="makesure">
+                            <button id="sure">登录</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-center">
+            <p>Copyright 2008-2020 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+        </div>
+    </div>
 </body>
 
 </html>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script/login.js"></script>
+<script src="script/registry.js"></script>
