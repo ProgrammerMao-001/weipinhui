@@ -2,7 +2,7 @@
 
 //1.连接数据库
 include "conn.php";
-
+header('content-type:text/html;charset=utf-8');
 //2.获取前端出入的sid
 if(isset($_GET['sid'])){
     $sid = $_GET['sid'];

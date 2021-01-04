@@ -1,10 +1,11 @@
 <?php
 //cors解决跨越:所有的用户都可以访问。
+
 header('Access-Control-Allow-Origin:*');  //允许任意的域名访问
 header('Access-Control-Allow-Method:POST,GET'); //允许请求方式是get和post
-
 //1.连接数据库
 header('content-type:text/html;charset=utf-8');
+
 define('HOST','localhost');//主机名
 define('USERNAME','root');//用户名
 define('PASSWORD','');//密码

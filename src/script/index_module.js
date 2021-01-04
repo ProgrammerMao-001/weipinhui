@@ -4,7 +4,7 @@ define(['jlazyload'], () => {
             //渲染+懒加载
             const $list = $('.list');
             $.ajax({
-                url: 'http://10.31.161.123/dashboard/weipinhui/php/',
+                url: 'http://10.31.161.123/dashboard/weipinhui/php/index.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -40,7 +40,6 @@ define(['jlazyload'], () => {
                         <div class="xuanrantitle">
                             <div class="temaijiaa">特卖价</div>
                             <p class="ppp">
-
                             <span class="newprice">￥${value.newprice}</span>
                             <span class="oldprice">￥${value.oldprice}</span>
                             <span class="discount">${value.discount}.6</span>

@@ -944,15 +944,13 @@ footer .footer-bottom {
 .lunbopic {
   width: 100%;
   height: 452px;
-  background: url("//b.appsimg.com/upload/momin/2020/12/01/182/1606809162008.jpg") -19px 0;
+  background: url("//b.appsimg.com/upload/momin/2020/12/01/182/1606809162008.jpg") no-repeat -19px 0;
 }
 .lunbopic .lunbopic-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -44%);
-  width: 1166px;
-  height: 408px;
+  position: static;
+  transform: translate(32%, 12%);
+  width: 1146px;
+  height: 400px;
 }
 
 .lunbo {
@@ -1010,6 +1008,7 @@ footer .footer-bottom {
 
 #right {
   right: 20px;
+  right: 0;
 }
 
 .render {
@@ -1024,6 +1023,16 @@ footer .footer-bottom {
   transform: translate(-50%, -50%);
   width: 1180px;
   height: 100%;
+}
+
+.sidebar {
+  width: 76px;
+  height: 342px;
+  padding: 1px;
+  border: 1px solid red;
+  position: fixed;
+  left: 0;
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

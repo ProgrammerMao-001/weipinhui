@@ -1,5 +1,6 @@
 <?php
 include "conn.php";//引入数据库连接代码。
+header('content-type:text/html;charset=utf-8');
 
 $result = $conn->query("select * from womanlist"); //获取数据的结果集(记录集)//表名
 
