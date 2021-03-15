@@ -16,7 +16,7 @@ define(['jcookie'], () => {
             function rendergoods(sid, num) { //sid:商品的编号    num:商品的数量
                 //获取所有的接口数据
                 $.ajax({
-                    url: 'http://10.31.161.123/dashboard/weipinhui/php/alldata.php',
+                    url: 'http://10.31.161.123:83/dashboard/weipinhui/php/alldata.php',
                     dataType: 'json'
                 }).done(function(data) {
                     $.each(data, function(index, value) {

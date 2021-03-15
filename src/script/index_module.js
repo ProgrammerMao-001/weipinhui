@@ -2,9 +2,9 @@ define(['jlazyload'], () => {
     return {
         init: function() {
             //渲染+懒加载
-            const $list = $('.list');
+            const $list = $('.list');``
             $.ajax({
-                url: 'http://10.31.161.123/dashboard/weipinhui/php/index.php',
+                url: 'http://10.31.161.123:83/dashboard/weipinhui/php/index.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
